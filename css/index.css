@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.left h2 {
+    font-size: 38px;
+    color: #1d2c5b;
+}
+
+.left p {
+    margin-top: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("/media/img/bg1.jpg") center/cover no-repeat;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.65);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* LINE CHUẨN */
+.welcome-line {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.welcome-line::before,
+.welcome-line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: white;
+}
+
+.welcome-line span {
+    padding: 0 15px;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.school {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+/* SECTION */
+.section {
+    padding: 20px 5%;
+}
+
+.light {
+    background: #f2f2f2;
+}
+
+.dark {
+    background: #1d2c5b;
+    color: white;
+}
+
+/* LAYOUT */
+.container.split {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.left {
+    flex: 1.2;
+}
+
+.right {
+    flex: 1;
+}
+
+.right img {
+    width: 100%;
+}
+
+/* SECTION 2 VIDEO */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-img {
+    width: 65%;
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 15px;
+}
+
+.box-img video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.caption {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(255,255,255,0.8);
+}
+
+/* SECTION 3 NOTE */
+.center-note {
+    width: 100%;
+    margin: 40px auto 0;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px;
+    color: #555;
+}
+
+/* SECTION 4 */
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* GIỚI HẠN WIDTH CHUNG */
+.section4 > * {
+    width: 100%;
+}
+
+/* TEXT */
+h2.center {
+    text-align: center;
+}
+
+p.center {
+    margin-bottom: 20px ;
+}
+
+.big-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* NOTE */
+.dark-note {
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* SMALL */
+.small {
+    text-align: center;
+    opacity: 0.8;
+    font-style: italic;
+}

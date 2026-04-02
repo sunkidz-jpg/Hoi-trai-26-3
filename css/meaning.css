@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f4f1ed;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 40px;
+}
+
+/* Title */
+.title {
+    margin: 20px 0px;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #1a2a5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title p {
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Sections */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    gap: 40px;
+}
+
+/* Text */
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 30px;
+    color: #b22222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text p {
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Image */
+.image {
+    flex: 1;
+    height: 400px; /* Chiều cao cố định cho tất cả ảnh */
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Tự động cắt ảnh */
+    object-position: center;/* Luôn căn giữa */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section.reverse {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+}

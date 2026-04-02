@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px; /* bằng chiều cao header */
+}
+
+/*navbar-menu*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 1000; /* thêm dòng này */
+}
+
+
+
+.navbar {
+  width: 90%;
+  height: 100%; /* THÊM DÒNG NÀY */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* khoảng cách giữa logo và tên trường */
+}
+
+.logohd {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logohd img {
+  height: 100%;
+  display: block;
+  max-height: 65px;
+}
+.school-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2f3293;
+}
+.school-name h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.school-name p {
+  font-size: 16px;
+  font-weight:bold ;
+}
+
+
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+.navbar-menu ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #131f5d;
+  transition: color 0.3s;
+}
+.navbar-menu ul li a:hover {
+  text-shadow: 0 0 3px currentColor;
+}
