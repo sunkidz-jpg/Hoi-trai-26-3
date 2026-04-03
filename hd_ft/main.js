@@ -7,5 +7,5 @@ function loadHTML(id, file) {
 }
 
 // Load chung cho mọi trang
-loadHTML("header", "/hd_ft/header.html");
-loadHTML("footer", "/hd_ft/footer.html");
+loadHTML("header", "hd_ft/header.html");
+loadHTML("footer", "hd_ft/footer.html");
