@@ -22,7 +22,7 @@ main {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url("/media/img/bg1.jpg") center/cover no-repeat;
+    background: url("media/img/bg1.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
